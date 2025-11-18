@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div class="wrapper">
 
     <div class="container">
         <h2>URL → QR Code Generator</h2>
@@ -24,11 +25,11 @@
             <button type="submit">Generate QR</button>
         </form>
 
-            {% if qr_data %}
-        <div style="margin-top: 20px;">
-            <img src="data:image/png;base64,{{ qr_data }}" alt="QR Code" style="width:200px; border-radius:10px;">
-        </div>
-    {% endif %}
+        {% if qr_data %}
+    <div style="margin-top: 20px;">
+        <img src="data:image/png;base64,{{ qr_data }}" alt="QR Code" style="width:200px; border-radius:10px;">
+    </div>
+{% endif %}
 
     </div>
 
@@ -45,6 +46,7 @@
         <div class="f-made">Made with ❤️ in India.</div>
         <div class="f-made">Made by <b>Yash Awasthi</b>.</div>
     </footer>
+    </div>
 
 </body>
 </html>
