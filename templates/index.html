@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <title>URL to QR Generator</title>
 
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
 </head>
 
 <body>
-    <div class="wrapper">
+
+<div class="wrapper">
 
     <div class="container">
         <h2>URL → QR Code Generator</h2>
@@ -26,27 +24,26 @@
         </form>
 
         {% if qr_data %}
-    <div style="margin-top: 20px;">
-        <img src="data:image/png;base64,{{ qr_data }}" alt="QR Code" style="width:200px; border-radius:10px;">
-    </div>
-{% endif %}
+        <div class="qr-box">
+            <img src="data:image/png;base64,{{ qr_data }}" alt="QR Code">
+        </div>
+        {% endif %}
 
     </div>
-
 
     <footer>
         <div class="f-info-socials">
             <a href="https://github.com/yashdotin"><i class="fa-brands fa-github"></i></a>
-<a href="https://www.instagram.com/yash.awasthi.10/"><i class="fa-brands fa-instagram"></i></a>
-<a href="https://www.linkedin.com/in/yash-awasthi-a7aa5b334/"><i class="fa-brands fa-linkedin"></i></a>
-<a href="https://x.com/Yashjs10"><i class="fa-brands fa-x-twitter"></i></a>
-
+            <a href="https://www.instagram.com/yash.awasthi.10/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yash-awasthi-a7aa5b334/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/Yashjs10"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
 
         <div class="f-made">Made with ❤️ in India.</div>
         <div class="f-made">Made by <b>Yash Awasthi</b>.</div>
     </footer>
-    </div>
+
+</div>
 
 </body>
 </html>
