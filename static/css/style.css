@@ -1,26 +1,30 @@
 
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        font-family: "Segoe UI", sans-serif;
-        background: #aec5e9;
-    }
+   html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f7fa;
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-    
-    .container {
-        background: #d0d8aa;
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        width: 380px;
-        text-align: center;
-        margin: auto;
-        flex: 1;
-    }
+
+.container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 420px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
 
     h2 {
         margin-bottom: 20px;
@@ -136,4 +140,5 @@
         height: 100px;
         object-fit: contain;
     }
+    
 
