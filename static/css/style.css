@@ -1,0 +1,139 @@
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: "Segoe UI", sans-serif;
+        background: #aec5e9;
+    }
+
+    
+    .container {
+        background: #d0d8aa;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        width: 380px;
+        text-align: center;
+        margin: auto;
+        flex: 1;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0 20px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+    }
+
+    input[type="text"]:focus {
+        border-color: #4a90e2;
+        outline: none;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        background: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #357abd;
+    }
+
+    .error {
+        color: #d9534f;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        margin-top: auto;
+        
+        background-color: #b0bdcc;
+    }
+
+    
+    .f-info {
+        background-color: rgb(131, 152, 152);
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-family: "Poppins", sans-serif;
+        color: #333;
+    }
+
+    
+    .f-info-socials {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .f-info-socials a i {
+        font-size: 1.8rem;
+        color: #555;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    
+    .fa-github:hover {
+        color: black;
+        transform: scale(1.2);
+    }
+
+    .fa-x, .fa-x-twitter:hover {
+        color: #1DA1F2;
+        transform: scale(1.2);
+    }
+
+    .fa-square-linkedin:hover, .fa-linkedin:hover {
+        color: blue;
+        transform: scale(1.2);
+    }
+
+    .fa-square-instagram:hover, .fa-instagram:hover {
+        color: #E4405F;
+        transform: scale(1.2);
+    }
+
+    
+    .f-info-brand,
+    .f-made {
+        font-size: small;
+        font-weight: 500;
+        color: darkslategrey;
+        margin-top: 3px;
+    }
+
+    
+    .logo-link img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
