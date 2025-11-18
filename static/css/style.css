@@ -1,11 +1,11 @@
-
-   html, body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: "Segoe UI", sans-serif;
     background: #f5f7fa;
+    font-family: "Segoe UI", sans-serif;
 }
+
 .wrapper {
     min-height: 100vh;
     display: flex;
@@ -14,131 +14,102 @@
 
 
 .container {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     width: 100%;
     max-width: 420px;
-    margin: 40px auto;
+    padding: 30px 20px;
+    margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
 
-    h2 {
-        margin-bottom: 20px;
-        color: #333;
-        font-weight: 600;
-    }
 
-    input[type="text"] {
-        width: 100%;
-        padding: 12px;
-        margin: 10px 0 20px;
-        font-size: 16px;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-    }
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
 
-    input[type="text"]:focus {
-        border-color: #4a90e2;
-        outline: none;
-    }
+input[type="text"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
 
-    button {
-        width: 100%;
-        padding: 12px;
-        font-size: 16px;
-        background: #4a90e2;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-    }
 
-    button:hover {
-        background: #357abd;
-    }
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
-    .error {
-        color: #d9534f;
-        margin-top: 10px;
-        font-size: 14px;
-    }
+button:hover {
+    background: #357abd;
+}
 
-    
-    footer {
-        text-align: center;
-        padding: 20px 0;
-        margin-top: auto;
-        
-        background-color: #b0bdcc;
-    }
 
-    
-    .f-info {
-        background-color: rgb(131, 152, 152);
-        padding: 2rem 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        font-family: "Poppins", sans-serif;
-        color: #333;
-    }
+.error {
+    color: #d9534f;
+    margin-top: 10px;
+    font-size: 14px;
+}
 
-    
-    .f-info-socials {
-        display: flex;
-        gap: 1.5rem;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
 
-    .f-info-socials a i {
-        font-size: 1.8rem;
-        color: #555;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
+.qr-box img {
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
 
-    
-    .fa-github:hover {
-        color: black;
-        transform: scale(1.2);
-    }
 
-    .fa-x, .fa-x-twitter:hover {
-        color: #1DA1F2;
-        transform: scale(1.2);
-    }
+footer {
+    text-align: center;
+    padding: 18px 0;
+    margin-top: auto;
+    background-color: #e2e8f0;
+}
 
-    .fa-square-linkedin:hover, .fa-linkedin:hover {
-        color: blue;
-        transform: scale(1.2);
-    }
 
-    .fa-square-instagram:hover, .fa-instagram:hover {
-        color: #E4405F;
-        transform: scale(1.2);
-    }
+.f-info-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    margin-bottom: 10px;
+}
 
-    
-    .f-info-brand,
-    .f-made {
-        font-size: small;
-        font-weight: 500;
-        color: darkslategrey;
-        margin-top: 3px;
-    }
+.f-info-socials a i {
+    font-size: 1.8rem;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-    
-    .logo-link img {
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-    }
-    
+.f-info-socials a i:hover {
+    transform: scale(1.2);
+}
 
+.fa-github:hover { color: black; }
+.fa-instagram:hover { color: #E4405F; }
+.fa-linkedin:hover { color: #0A66C2; }
+.fa-x-twitter:hover { color: #1DA1F2; }
+
+
+.f-made {
+    font-size: 14px;
+    color: #444;
+}
